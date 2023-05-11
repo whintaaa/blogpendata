@@ -161,6 +161,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="Naive_Bayes.html">Naive Bayes</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Tugas Decision Tree Data Weather</a></li>
 <li class="toctree-l1"><a class="reference internal" href="UTS.html">UTS PENDATA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backpropagation.html">Menghitung Manual Backpropagation</a></li>
 </ul>
 
     </div>
@@ -482,7 +483,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-7f779117-ee3f-4731-b83b-fb6a10cb57f2">
+  <div id="df-f7782ca9-9925-47f8-b354-dc5de4b52a78">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -700,7 +701,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-7f779117-ee3f-4731-b83b-fb6a10cb57f2')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f7782ca9-9925-47f8-b354-dc5de4b52a78')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -751,12 +752,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-7f779117-ee3f-4731-b83b-fb6a10cb57f2 button.colab-df-convert');
+          document.querySelector('#df-f7782ca9-9925-47f8-b354-dc5de4b52a78 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-7f779117-ee3f-4731-b83b-fb6a10cb57f2');
+          const element = document.querySelector('#df-f7782ca9-9925-47f8-b354-dc5de4b52a78');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -806,34 +807,34 @@ document.write(`
 node [shape=box, fontname=&quot;helvetica&quot;] ;
 edge [fontname=&quot;helvetica&quot;] ;
 0 [label=&quot;x[0] &lt;= 0.5\ngini = 0.459\nsamples = 14\nvalue = [5, 9]&quot;] ;
-1 [label=&quot;x[7] &lt;= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]&quot;] ;
+1 [label=&quot;x[6] &lt;= 0.5\ngini = 0.5\nsamples = 10\nvalue = [5, 5]&quot;] ;
 0 -&gt; 1 [labeldistance=2.5, labelangle=45, headlabel=&quot;True&quot;] ;
-2 [label=&quot;x[1] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
+2 [label=&quot;x[8] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
 1 -&gt; 2 ;
-3 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
+3 [label=&quot;x[5] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
 2 -&gt; 3 ;
-4 [label=&quot;x[8] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
-2 -&gt; 4 ;
-5 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
-4 -&gt; 5 ;
-6 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
-4 -&gt; 6 ;
-7 [label=&quot;x[8] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [1, 4]&quot;] ;
+4 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
+3 -&gt; 4 ;
+5 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
+3 -&gt; 5 ;
+6 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
+2 -&gt; 6 ;
+7 [label=&quot;x[1] &lt;= 0.5\ngini = 0.32\nsamples = 5\nvalue = [4, 1]&quot;] ;
 1 -&gt; 7 ;
-8 [label=&quot;x[3] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+8 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [3, 0]&quot;] ;
 7 -&gt; 8 ;
-9 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
-8 -&gt; 9 ;
-10 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
-8 -&gt; 10 ;
-11 [label=&quot;gini = 0.0\nsamples = 3\nvalue = [0, 3]&quot;] ;
-7 -&gt; 11 ;
+9 [label=&quot;x[9] &lt;= 0.5\ngini = 0.5\nsamples = 2\nvalue = [1, 1]&quot;] ;
+7 -&gt; 9 ;
+10 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [0, 1]&quot;] ;
+9 -&gt; 10 ;
+11 [label=&quot;gini = 0.0\nsamples = 1\nvalue = [1, 0]&quot;] ;
+9 -&gt; 11 ;
 12 [label=&quot;gini = 0.0\nsamples = 4\nvalue = [0, 4]&quot;] ;
 0 -&gt; 12 [labeldistance=2.5, labelangle=-45, headlabel=&quot;False&quot;] ;
 }
 </pre></div>
 </div>
-<img alt="_images/f44a229e8ae7453a0b6b91d6be8826542b1df08b8e043ef212ed0a875c6ab9d2.png" src="_images/f44a229e8ae7453a0b6b91d6be8826542b1df08b8e043ef212ed0a875c6ab9d2.png" />
+<img alt="_images/6ea2b26372db72336b63a14198877c0e4e222c0f8d8e0f661b9f47099fb782bc.png" src="_images/6ea2b26372db72336b63a14198877c0e4e222c0f8d8e0f661b9f47099fb782bc.png" />
 </div>
 </div>
 </div>
