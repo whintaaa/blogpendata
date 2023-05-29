@@ -413,7 +413,7 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-87c6f3ec-1141-42f0-82db-6e4c952e5527">
+  <div id="df-f76a4a9f-7c00-4659-99ad-a189b19037d1">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -484,7 +484,7 @@ document.write(`
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-87c6f3ec-1141-42f0-82db-6e4c952e5527')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-f76a4a9f-7c00-4659-99ad-a189b19037d1')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -535,12 +535,12 @@ document.write(`
 
       <script>
         const buttonEl =
-          document.querySelector('#df-87c6f3ec-1141-42f0-82db-6e4c952e5527 button.colab-df-convert');
+          document.querySelector('#df-f76a4a9f-7c00-4659-99ad-a189b19037d1 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-87c6f3ec-1141-42f0-82db-6e4c952e5527');
+          const element = document.querySelector('#df-f76a4a9f-7c00-4659-99ad-a189b19037d1');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -563,48 +563,18 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="ne">KeyError</span>Traceback (most recent call last)
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/core/indexes/base.py</span> in <span class="ni">get_loc</span><span class="nt">(self, key, method, tolerance)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3801</span>             <span class="k">try</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">3802</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">casted_key</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3803</span>             <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/_libs/index.pyx</span> in <span class="ni">pandas._libs.index.IndexEngine.get_loc</span><span class="nt">()</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/_libs/index.pyx</span> in <span class="ni">pandas._libs.index.IndexEngine.get_loc</span><span class="nt">()</span>
-
-<span class="nn">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ni">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="nt">()</span>
-
-<span class="nn">pandas/_libs/hashtable_class_helper.pxi</span> in <span class="ni">pandas._libs.hashtable.PyObjectHashTable.get_item</span><span class="nt">()</span>
-
-<span class="ne">KeyError</span>: &#39;species&#39;
-
-<span class="n">The</span> <span class="n">above</span> <span class="n">exception</span> <span class="n">was</span> <span class="n">the</span> <span class="n">direct</span> <span class="n">cause</span> <span class="n">of</span> <span class="n">the</span> <span class="n">following</span> <span class="n">exception</span><span class="p">:</span>
-
-<span class="ne">KeyError</span>Traceback (most recent call last)
-<span class="nn">&lt;ipython-input-3-1a8c322653e2&gt;</span> in <span class="ni">&lt;cell line: 1&gt;</span><span class="nt">()</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/core/frame.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3805</span>             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">nlevels</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">3806</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_getitem_multilevel</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">3807</span>             <span class="n">indexer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3808</span>             <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">indexer</span><span class="p">):</span>
-<span class="g g-Whitespace">   </span><span class="mi">3809</span>                 <span class="n">indexer</span> <span class="o">=</span> <span class="p">[</span><span class="n">indexer</span><span class="p">]</span>
-
-<span class="nn">/usr/local/lib/python3.10/dist-packages/pandas/core/indexes/base.py</span> in <span class="ni">get_loc</span><span class="nt">(self, key, method, tolerance)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3802</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">casted_key</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3803</span>             <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">3804</span>                 <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
-<span class="g g-Whitespace">   </span><span class="mi">3805</span>             <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">3806</span>                 <span class="c1"># If we have a listlike key, _check_indexing_error will raise</span>
-
-<span class="ne">KeyError</span>: &#39;species&#39;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Iris-setosa        50
+Iris-versicolor    50
+Iris-virginica     50
+Setosa             50
+Versicolor         50
+Virginica          50
+Name: class, dtype: int64
 </pre></div>
 </div>
 </div>
@@ -616,9 +586,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;sepal_length&#39;, &#39;sepal_width&#39;, &#39;petal_length&#39;, &#39;petal_width&#39;,
-       &#39;species&#39;],
-      dtype=&#39;object&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Index([&#39;sepal_l&#39;, &#39;sepal_w&#39;, &#39;petal_l&#39;, &#39;petal_w&#39;, &#39;class&#39;], dtype=&#39;object&#39;)
 </pre></div>
 </div>
 </div>
@@ -633,16 +601,16 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">label_dict</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;setosa&#39;</span><span class="p">,</span>
-           <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;virginica&#39;</span><span class="p">,</span>
-           <span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;versicolor&#39;</span><span class="p">}</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">label_dict</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;Iris-setosa&#39;</span><span class="p">,</span>
+           <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;Iris-virginica&#39;</span><span class="p">,</span>
+           <span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;Iris-versicolor&#39;</span><span class="p">}</span>
 <span class="n">feature_dict</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span> <span class="s1">&#39;sepal_length&#39;</span><span class="p">,</span><span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;sepal_width&#39;</span><span class="p">,</span><span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;petal_length&#39;</span><span class="p">,</span><span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;petal_width&#39;</span><span class="p">}</span>
 
 <span class="k">with</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="s1">&#39;seaborn-whitegrid&#39;</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">):</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">lab</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;setosa&#39;</span><span class="p">,</span><span class="s1">&#39;virginica&#39;</span><span class="p">,</span><span class="s1">&#39;versicolor&#39;</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">lab</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;Iris-setosa&#39;</span><span class="p">,</span><span class="s1">&#39;Iris-virginica&#39;</span><span class="p">,</span><span class="s1">&#39;Iris-versicolor&#39;</span><span class="p">):</span>
             <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">y</span><span class="o">==</span><span class="n">lab</span><span class="p">,</span> <span class="n">i</span><span class="p">],</span>
                     <span class="n">label</span><span class="o">=</span><span class="n">lab</span><span class="p">,</span>
                     <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
@@ -656,7 +624,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/6eb9293cf189462083a501602604f9d40f17e6c08871f2f8065e560709233488.png" src="_images/6eb9293cf189462083a501602604f9d40f17e6c08871f2f8065e560709233488.png" />
+<img alt="_images/6a27e042e0c50d15b7fbecb46290603eaa31f7f4963b635afd8e2998b8315f09.png" src="_images/6a27e042e0c50d15b7fbecb46290603eaa31f7f4963b635afd8e2998b8315f09.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -677,10 +645,10 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Covariance Matrix 
-[[ 1.00671141 -0.11010327  0.87760486  0.82344326]
- [-0.11010327  1.00671141 -0.42333835 -0.358937  ]
- [ 0.87760486 -0.42333835  1.00671141  0.96921855]
- [ 0.82344326 -0.358937    0.96921855  1.00671141]]
+[[ 1.00334448 -0.11385853  0.87466949  0.82068276]
+ [-0.11385853  1.00334448 -0.42590552 -0.36254685]
+ [ 0.87466949 -0.42590552  1.00334448  0.9660308 ]
+ [ 0.82068276 -0.36254685  0.9660308   1.00334448]]
 </pre></div>
 </div>
 </div>
@@ -693,10 +661,10 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Numpy Covariance matrix 
-[[ 1.00671141 -0.11010327  0.87760486  0.82344326]
- [-0.11010327  1.00671141 -0.42333835 -0.358937  ]
- [ 0.87760486 -0.42333835  1.00671141  0.96921855]
- [ 0.82344326 -0.358937    0.96921855  1.00671141]]
+[[ 1.00334448 -0.11385853  0.87466949  0.82068276]
+ [-0.11385853  1.00334448 -0.42590552 -0.36254685]
+ [ 0.87466949 -0.42590552  1.00334448  0.9660308 ]
+ [ 0.82068276 -0.36254685  0.9660308   1.00334448]]
 </pre></div>
 </div>
 </div>
@@ -714,12 +682,12 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvectors 
-[[ 0.52237162 -0.37231836 -0.72101681  0.26199559]
- [-0.26335492 -0.92555649  0.24203288 -0.12413481]
- [ 0.58125401 -0.02109478  0.14089226 -0.80115427]
- [ 0.56561105 -0.06541577  0.6338014   0.52354627]]
+[[ 0.52171778 -0.37486813 -0.72029777  0.26164013]
+ [-0.26636854 -0.9244304   0.24319552 -0.12382316]
+ [ 0.58083504 -0.02280557  0.14150831 -0.80130267]
+ [ 0.56523359 -0.06619834  0.63403664  0.52357072]]
 Eigenvelues 
-[2.93035378 0.92740362 0.14834223 0.02074601]
+[2.92439167 0.92070445 0.14755111 0.02073069]
 </pre></div>
 </div>
 </div>
@@ -737,12 +705,12 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvectors 
-[[ 0.52237162 -0.37231836 -0.72101681  0.26199559]
- [-0.26335492 -0.92555649  0.24203288 -0.12413481]
- [ 0.58125401 -0.02109478  0.14089226 -0.80115427]
- [ 0.56561105 -0.06541577  0.6338014   0.52354627]]
+[[ 0.52171778 -0.37486813 -0.72029777  0.26164013]
+ [-0.26636854 -0.9244304   0.24319552 -0.12382316]
+ [ 0.58083504 -0.02280557  0.14150831 -0.80130267]
+ [ 0.56523359 -0.06619834  0.63403664  0.52357072]]
 Eigenvelues 
-[2.91081808 0.92122093 0.14735328 0.02060771]
+[2.9146437  0.91763544 0.14705928 0.02066158]
 </pre></div>
 </div>
 </div>
@@ -759,12 +727,12 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvectors 
-[[ 0.52237162 -0.37231836 -0.72101681  0.26199559]
- [-0.26335492 -0.92555649  0.24203288 -0.12413481]
- [ 0.58125401 -0.02109478  0.14089226 -0.80115427]
- [ 0.56561105 -0.06541577  0.6338014   0.52354627]]
+[[ 0.52171778 -0.37486813 -0.72029777  0.26164013]
+ [-0.26636854 -0.9244304   0.24319552 -0.12382316]
+ [ 0.58083504 -0.02280557  0.14150831 -0.80130267]
+ [ 0.56523359 -0.06619834  0.63403664  0.52357072]]
 Eigenvelues 
-[2.91081808 0.92122093 0.14735328 0.02060771]
+[2.9146437  0.91763544 0.14705928 0.02066158]
 </pre></div>
 </div>
 </div>
@@ -777,10 +745,10 @@ Eigenvelues
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[-0.52237162, -0.37231836,  0.72101681,  0.26199559],
-       [ 0.26335492, -0.92555649, -0.24203288, -0.12413481],
-       [-0.58125401, -0.02109478, -0.14089226, -0.80115427],
-       [-0.56561105, -0.06541577, -0.6338014 ,  0.52354627]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[-0.52171778, -0.37486813,  0.72029777,  0.26164013],
+       [ 0.26636854, -0.9244304 , -0.24319552, -0.12382316],
+       [-0.58083504, -0.02280557, -0.14150831, -0.80130267],
+       [-0.56523359, -0.06619834, -0.63403664,  0.52357072]])
 </pre></div>
 </div>
 </div>
@@ -816,10 +784,10 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Eigenvalues in descending order:
-2.9108180837520528
-0.9212209307072249
-0.1473532783050959
-0.020607707235624884
+2.914643702203565
+0.9176354378175842
+0.14705927550261844
+0.020661584476230434
 </pre></div>
 </div>
 </div>
@@ -850,7 +818,7 @@ Eigenvelues
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/5a22adbcf107f11561704526eef1f6315049b8af580666e8b100fb54e2835c85.png" src="_images/5a22adbcf107f11561704526eef1f6315049b8af580666e8b100fb54e2835c85.png" />
+<img alt="_images/16adee83ec87bc071a8a575358a9e3f7a92f43c976534a4e8942a6d1af1cef93.png" src="_images/16adee83ec87bc071a8a575358a9e3f7a92f43c976534a4e8942a6d1af1cef93.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -864,10 +832,10 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Matrix W:
- [[ 0.52237162 -0.37231836]
- [-0.26335492 -0.92555649]
- [ 0.58125401 -0.02109478]
- [ 0.56561105 -0.06541577]]
+ [[ 0.52171778 -0.37486813]
+ [-0.26636854 -0.9244304 ]
+ [ 0.58083504 -0.02280557]
+ [ 0.56523359 -0.06619834]]
 </pre></div>
 </div>
 </div>
@@ -883,7 +851,7 @@ Eigenvelues
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="s1">&#39;seaborn-whitegrid&#39;</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">lab</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">((</span><span class="s1">&#39;setosa&#39;</span><span class="p">,</span> <span class="s1">&#39;versicolor&#39;</span><span class="p">,</span> <span class="s1">&#39;virginica&#39;</span><span class="p">),</span>
+    <span class="k">for</span> <span class="n">lab</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">((</span><span class="s1">&#39;Iris-setosa&#39;</span><span class="p">,</span> <span class="s1">&#39;Iris-versicolor&#39;</span><span class="p">,</span> <span class="s1">&#39;Iris-virginica&#39;</span><span class="p">),</span>
                         <span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">)):</span>
         <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="n">y</span><span class="o">==</span><span class="n">lab</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
                     <span class="n">Y</span><span class="p">[</span><span class="n">y</span><span class="o">==</span><span class="n">lab</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
@@ -898,13 +866,13 @@ Eigenvelues
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/cb2a57093ff5eeb255a123df3971973b18b11422773920eda895f3209661d18d.png" src="_images/cb2a57093ff5eeb255a123df3971973b18b11422773920eda895f3209661d18d.png" />
+<img alt="_images/3860ee36fe9d20690097def407961aba68a0383a8c0d0b392812c24707e9d853.png" src="_images/3860ee36fe9d20690097def407961aba68a0383a8c0d0b392812c24707e9d853.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">PCA</span> <span class="k">as</span> <span class="n">sklearnPCA</span>
-<span class="n">sklearn_pca</span> <span class="o">=</span> <span class="n">sklearnPCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">sklearn_pca</span> <span class="o">=</span> <span class="n">sklearnPCA</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
 <span class="n">Y_sklearn</span> <span class="o">=</span> <span class="n">sklearn_pca</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X_std</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -914,35 +882,35 @@ Eigenvelues
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">plt</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="s1">&#39;seaborn-whitegrid&#39;</span><span class="p">):</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">lab</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">((</span><span class="s1">&#39;setosa&#39;</span><span class="p">,</span> <span class="s1">&#39;versicolor&#39;</span><span class="p">,</span> <span class="s1">&#39;virginica&#39;</span><span class="p">),</span>
+    <span class="k">for</span> <span class="n">lab</span><span class="p">,</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">((</span><span class="s1">&#39;Iris-setosa&#39;</span><span class="p">,</span> <span class="s1">&#39;Iris-versicolor&#39;</span><span class="p">,</span> <span class="s1">&#39;Iris-virginica&#39;</span><span class="p">),</span>
                         <span class="p">(</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">)):</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">Y_sklearn</span><span class="p">[</span><span class="n">y</span><span class="o">==</span><span class="n">lab</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
-                    <span class="n">Y_sklearn</span><span class="p">[</span><span class="n">y</span><span class="o">==</span><span class="n">lab</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">Y</span><span class="p">[</span><span class="n">y</span><span class="o">==</span><span class="n">lab</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                    <span class="n">Y</span><span class="p">[</span><span class="n">y</span><span class="o">==</span><span class="n">lab</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
                     <span class="n">label</span><span class="o">=</span><span class="n">lab</span><span class="p">,</span>
                     <span class="n">c</span><span class="o">=</span><span class="n">col</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Principal Component 1&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Principal Component 2&#39;</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;upper center&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;lower center&#39;</span><span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/264b1233746625f8ac36c2227d4c58aed6af883582673ca8e391428f69555a5b.png" src="_images/264b1233746625f8ac36c2227d4c58aed6af883582673ca8e391428f69555a5b.png" />
+<img alt="_images/3860ee36fe9d20690097def407961aba68a0383a8c0d0b392812c24707e9d853.png" src="_images/3860ee36fe9d20690097def407961aba68a0383a8c0d0b392812c24707e9d853.png" />
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">Y_sklearn</span><span class="p">)</span>
-<span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;X&#39;</span><span class="p">,</span><span class="s1">&#39;Y&#39;</span><span class="p">]</span>
+<span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;PC1&#39;</span><span class="p">,</span><span class="s1">&#39;PC2&#39;</span><span class="p">,</span><span class="s1">&#39;PC3&#39;</span><span class="p">]</span>
 <span class="n">data</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-43ccd814-5776-4bea-8611-03efdda924da">
+  <div id="df-51f6913f-2247-4370-8d2a-f6c208618aa3">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -962,71 +930,83 @@ Eigenvelues
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>X</th>
-      <th>Y</th>
+      <th>PC1</th>
+      <th>PC2</th>
+      <th>PC3</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-2.264542</td>
-      <td>0.505704</td>
+      <td>-2.264652</td>
+      <td>0.492794</td>
+      <td>-0.124828</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-2.086426</td>
-      <td>-0.655405</td>
+      <td>-2.083700</td>
+      <td>-0.664823</td>
+      <td>-0.230916</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-2.367950</td>
-      <td>-0.318477</td>
+      <td>-2.366105</td>
+      <td>-0.330254</td>
+      <td>0.047850</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-2.304197</td>
-      <td>-0.575368</td>
+      <td>-2.301801</td>
+      <td>-0.586438</td>
+      <td>0.095088</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-2.388777</td>
-      <td>0.674767</td>
+      <td>-2.389345</td>
+      <td>0.660727</td>
+      <td>0.018578</td>
     </tr>
     <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>145</th>
-      <td>1.870522</td>
-      <td>0.382822</td>
+      <th>295</th>
+      <td>1.870506</td>
+      <td>0.384920</td>
+      <td>0.255398</td>
     </tr>
     <tr>
-      <th>146</th>
-      <td>1.558492</td>
-      <td>-0.905314</td>
+      <th>296</th>
+      <td>1.561554</td>
+      <td>-0.900968</td>
+      <td>-0.025863</td>
     </tr>
     <tr>
-      <th>147</th>
-      <td>1.520845</td>
-      <td>0.266795</td>
+      <th>297</th>
+      <td>1.521002</td>
+      <td>0.267951</td>
+      <td>0.179725</td>
     </tr>
     <tr>
-      <th>148</th>
-      <td>1.376391</td>
-      <td>1.016362</td>
+      <th>298</th>
+      <td>1.374565</td>
+      <td>1.013822</td>
+      <td>0.932387</td>
     </tr>
     <tr>
-      <th>149</th>
-      <td>0.959299</td>
-      <td>-0.022284</td>
+      <th>299</th>
+      <td>0.959972</td>
+      <td>-0.023295</td>
+      <td>0.528524</td>
     </tr>
   </tbody>
 </table>
-<p>150 rows × 2 columns</p>
+<p>300 rows × 3 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-43ccd814-5776-4bea-8611-03efdda924da')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-51f6913f-2247-4370-8d2a-f6c208618aa3')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1077,12 +1057,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-43ccd814-5776-4bea-8611-03efdda924da button.colab-df-convert');
+          document.querySelector('#df-51f6913f-2247-4370-8d2a-f6c208618aa3 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-43ccd814-5776-4bea-8611-03efdda924da');
+          const element = document.querySelector('#df-51f6913f-2247-4370-8d2a-f6c208618aa3');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1105,14 +1085,14 @@ Eigenvelues
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span>
 <span class="n">data</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-2810a99d-57ee-4d4b-bcfb-bc4b507f5945">
+  <div id="df-0e71cc54-ae15-4e83-b21a-232e3d20d0d7">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1132,83 +1112,95 @@ Eigenvelues
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>X</th>
-      <th>Y</th>
-      <th>species</th>
+      <th>PC1</th>
+      <th>PC2</th>
+      <th>PC3</th>
+      <th>class</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-2.264542</td>
-      <td>0.505704</td>
-      <td>setosa</td>
+      <td>-2.264652</td>
+      <td>0.492794</td>
+      <td>-0.124828</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-2.086426</td>
-      <td>-0.655405</td>
-      <td>setosa</td>
+      <td>-2.083700</td>
+      <td>-0.664823</td>
+      <td>-0.230916</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-2.367950</td>
-      <td>-0.318477</td>
-      <td>setosa</td>
+      <td>-2.366105</td>
+      <td>-0.330254</td>
+      <td>0.047850</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-2.304197</td>
-      <td>-0.575368</td>
-      <td>setosa</td>
+      <td>-2.301801</td>
+      <td>-0.586438</td>
+      <td>0.095088</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-2.388777</td>
-      <td>0.674767</td>
-      <td>setosa</td>
+      <td>-2.389345</td>
+      <td>0.660727</td>
+      <td>0.018578</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>...</th>
       <td>...</td>
       <td>...</td>
       <td>...</td>
+      <td>...</td>
     </tr>
     <tr>
-      <th>145</th>
-      <td>1.870522</td>
-      <td>0.382822</td>
-      <td>virginica</td>
+      <th>295</th>
+      <td>1.870506</td>
+      <td>0.384920</td>
+      <td>0.255398</td>
+      <td>Virginica</td>
     </tr>
     <tr>
-      <th>146</th>
-      <td>1.558492</td>
-      <td>-0.905314</td>
-      <td>virginica</td>
+      <th>296</th>
+      <td>1.561554</td>
+      <td>-0.900968</td>
+      <td>-0.025863</td>
+      <td>Virginica</td>
     </tr>
     <tr>
-      <th>147</th>
-      <td>1.520845</td>
-      <td>0.266795</td>
-      <td>virginica</td>
+      <th>297</th>
+      <td>1.521002</td>
+      <td>0.267951</td>
+      <td>0.179725</td>
+      <td>Virginica</td>
     </tr>
     <tr>
-      <th>148</th>
-      <td>1.376391</td>
-      <td>1.016362</td>
-      <td>virginica</td>
+      <th>298</th>
+      <td>1.374565</td>
+      <td>1.013822</td>
+      <td>0.932387</td>
+      <td>Virginica</td>
     </tr>
     <tr>
-      <th>149</th>
-      <td>0.959299</td>
-      <td>-0.022284</td>
-      <td>virginica</td>
+      <th>299</th>
+      <td>0.959972</td>
+      <td>-0.023295</td>
+      <td>0.528524</td>
+      <td>Virginica</td>
     </tr>
   </tbody>
 </table>
-<p>150 rows × 3 columns</p>
+<p>300 rows × 4 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-2810a99d-57ee-4d4b-bcfb-bc4b507f5945')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0e71cc54-ae15-4e83-b21a-232e3d20d0d7')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1259,12 +1251,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-2810a99d-57ee-4d4b-bcfb-bc4b507f5945 button.colab-df-convert');
+          document.querySelector('#df-0e71cc54-ae15-4e83-b21a-232e3d20d0d7 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-2810a99d-57ee-4d4b-bcfb-bc4b507f5945');
+          const element = document.querySelector('#df-0e71cc54-ae15-4e83-b21a-232e3d20d0d7');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1288,15 +1280,15 @@ Eigenvelues
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataset</span> <span class="o">=</span> <span class="n">data</span>
-<span class="n">X</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="s1">&#39;species&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">dataset</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,:</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">dataset</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 <span class="n">dataset</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-bf7826c2-29d2-43bf-b41c-86840363a3cf">
+  <div id="df-89381793-5e5c-4e9c-81c2-b45aac81ecb9">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1316,46 +1308,52 @@ Eigenvelues
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>X</th>
-      <th>Y</th>
-      <th>species</th>
+      <th>PC1</th>
+      <th>PC2</th>
+      <th>PC3</th>
+      <th>class</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-2.264542</td>
-      <td>0.505704</td>
-      <td>setosa</td>
+      <td>-2.264652</td>
+      <td>0.492794</td>
+      <td>-0.124828</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-2.086426</td>
-      <td>-0.655405</td>
-      <td>setosa</td>
+      <td>-2.083700</td>
+      <td>-0.664823</td>
+      <td>-0.230916</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-2.367950</td>
-      <td>-0.318477</td>
-      <td>setosa</td>
+      <td>-2.366105</td>
+      <td>-0.330254</td>
+      <td>0.047850</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-2.304197</td>
-      <td>-0.575368</td>
-      <td>setosa</td>
+      <td>-2.301801</td>
+      <td>-0.586438</td>
+      <td>0.095088</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-2.388777</td>
-      <td>0.674767</td>
-      <td>setosa</td>
+      <td>-2.389345</td>
+      <td>0.660727</td>
+      <td>0.018578</td>
+      <td>Iris-setosa</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-bf7826c2-29d2-43bf-b41c-86840363a3cf')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-89381793-5e5c-4e9c-81c2-b45aac81ecb9')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1406,12 +1404,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-bf7826c2-29d2-43bf-b41c-86840363a3cf button.colab-df-convert');
+          document.querySelector('#df-89381793-5e5c-4e9c-81c2-b45aac81ecb9 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-bf7826c2-29d2-43bf-b41c-86840363a3cf');
+          const element = document.querySelector('#df-89381793-5e5c-4e9c-81c2-b45aac81ecb9');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1469,12 +1467,21 @@ Eigenvelues
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;versicolor&#39;, &#39;setosa&#39;, &#39;virginica&#39;, &#39;versicolor&#39;, &#39;virginica&#39;,
-       &#39;setosa&#39;, &#39;versicolor&#39;, &#39;virginica&#39;, &#39;versicolor&#39;, &#39;versicolor&#39;,
-       &#39;versicolor&#39;, &#39;setosa&#39;, &#39;setosa&#39;, &#39;setosa&#39;, &#39;setosa&#39;, &#39;versicolor&#39;,
-       &#39;virginica&#39;, &#39;versicolor&#39;, &#39;versicolor&#39;, &#39;virginica&#39;, &#39;setosa&#39;,
-       &#39;versicolor&#39;, &#39;setosa&#39;, &#39;virginica&#39;, &#39;virginica&#39;, &#39;virginica&#39;,
-       &#39;virginica&#39;, &#39;virginica&#39;, &#39;setosa&#39;, &#39;setosa&#39;], dtype=object)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;Iris-versicolor&#39;, &#39;Iris-virginica&#39;, &#39;Iris-setosa&#39;, &#39;Iris-setosa&#39;,
+       &#39;Iris-virginica&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Virginica&#39;,
+       &#39;Iris-setosa&#39;, &#39;Iris-setosa&#39;, &#39;Iris-versicolor&#39;, &#39;Versicolor&#39;,
+       &#39;Iris-versicolor&#39;, &#39;Setosa&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;,
+       &#39;Iris-virginica&#39;, &#39;Iris-versicolor&#39;, &#39;Iris-virginica&#39;, &#39;Setosa&#39;,
+       &#39;Versicolor&#39;, &#39;Virginica&#39;, &#39;Iris-versicolor&#39;, &#39;Iris-virginica&#39;,
+       &#39;Iris-virginica&#39;, &#39;Setosa&#39;, &#39;Iris-virginica&#39;, &#39;Iris-virginica&#39;,
+       &#39;Setosa&#39;, &#39;Iris-versicolor&#39;, &#39;Setosa&#39;, &#39;Iris-setosa&#39;,
+       &#39;Iris-setosa&#39;, &#39;Setosa&#39;, &#39;Iris-versicolor&#39;, &#39;Iris-versicolor&#39;,
+       &#39;Setosa&#39;, &#39;Iris-versicolor&#39;, &#39;Setosa&#39;, &#39;Versicolor&#39;, &#39;Versicolor&#39;,
+       &#39;Versicolor&#39;, &#39;Iris-virginica&#39;, &#39;Versicolor&#39;, &#39;Versicolor&#39;,
+       &#39;Versicolor&#39;, &#39;Iris-versicolor&#39;, &#39;Versicolor&#39;, &#39;Virginica&#39;,
+       &#39;Iris-versicolor&#39;, &#39;Setosa&#39;, &#39;Virginica&#39;, &#39;Iris-versicolor&#39;,
+       &#39;Iris-versicolor&#39;, &#39;Iris-virginica&#39;, &#39;Iris-virginica&#39;,
+       &#39;Versicolor&#39;, &#39;Versicolor&#39;, &#39;Setosa&#39;, &#39;Iris-setosa&#39;], dtype=object)
 </pre></div>
 </div>
 </div>
@@ -1490,12 +1497,15 @@ Eigenvelues
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy :  0.9
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Accuracy :  0.2833333333333333
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[10,  0,  0],
-       [ 0,  8,  1],
-       [ 0,  2,  9]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[ 4,  0,  0,  6,  0,  0],
+       [ 0,  2,  0,  0, 10,  0],
+       [ 0,  1,  2,  0,  0,  4],
+       [ 3,  0,  0,  6,  0,  0],
+       [ 0, 10,  1,  0,  3,  0],
+       [ 0,  0,  8,  0,  0,  0]])
 </pre></div>
 </div>
 </div>
@@ -1509,7 +1519,7 @@ Eigenvelues
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-e99864d8-da2f-470f-9760-dfa69ca484f3">
+  <div id="df-0bda4331-af3a-401d-9070-59c80a67b5a8">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1536,158 +1546,308 @@ Eigenvelues
   <tbody>
     <tr>
       <th>0</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Setosa</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Iris-setosa</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>versicolor</td>
-      <td>virginica</td>
+      <td>Versicolor</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Versicolor</td>
+      <td>Versicolor</td>
     </tr>
     <tr>
       <th>6</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Setosa</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Iris-virginica</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Iris-setosa</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Setosa</td>
+      <td>Iris-setosa</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>virginica</td>
-      <td>versicolor</td>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Iris-setosa</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Setosa</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Versicolor</td>
+      <td>Versicolor</td>
     </tr>
     <tr>
       <th>16</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>17</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
     </tr>
     <tr>
       <th>18</th>
-      <td>versicolor</td>
-      <td>versicolor</td>
+      <td>Iris-virginica</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>19</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Setosa</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>20</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
     </tr>
     <tr>
       <th>21</th>
-      <td>virginica</td>
-      <td>versicolor</td>
+      <td>Iris-virginica</td>
+      <td>Virginica</td>
     </tr>
     <tr>
       <th>22</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
     </tr>
     <tr>
       <th>23</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>24</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Iris-virginica</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>25</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Iris-setosa</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>26</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>27</th>
-      <td>virginica</td>
-      <td>virginica</td>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
     </tr>
     <tr>
       <th>28</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Setosa</td>
+      <td>Setosa</td>
     </tr>
     <tr>
       <th>29</th>
-      <td>setosa</td>
-      <td>setosa</td>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>Iris-setosa</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>Setosa</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>Iris-setosa</td>
+      <td>Iris-setosa</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Iris-setosa</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>Iris-virginica</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>Iris-setosa</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Iris-versicolor</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>Iris-setosa</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Iris-virginica</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Setosa</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Iris-virginica</td>
+      <td>Virginica</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>Versicolor</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Iris-versicolor</td>
+      <td>Iris-versicolor</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Virginica</td>
+      <td>Iris-virginica</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Iris-versicolor</td>
+      <td>Versicolor</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Setosa</td>
+      <td>Setosa</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Iris-setosa</td>
+      <td>Iris-setosa</td>
     </tr>
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-e99864d8-da2f-470f-9760-dfa69ca484f3')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-0bda4331-af3a-401d-9070-59c80a67b5a8')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
         
@@ -1738,12 +1898,12 @@ Eigenvelues
 
       <script>
         const buttonEl =
-          document.querySelector('#df-e99864d8-da2f-470f-9760-dfa69ca484f3 button.colab-df-convert');
+          document.querySelector('#df-0bda4331-af3a-401d-9070-59c80a67b5a8 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-e99864d8-da2f-470f-9760-dfa69ca484f3');
+          const element = document.querySelector('#df-0bda4331-af3a-401d-9070-59c80a67b5a8');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
